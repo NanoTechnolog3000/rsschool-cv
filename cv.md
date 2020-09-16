@@ -1,17 +1,22 @@
 # Vitali Yaroshik
 
 ## Contact Info
+
 * [Github](https://github.com/NanoTechnolog3000)
 * [Gmail](yaroshik.vitali@gmail.com)
 * [LinkedIn](https://www.linkedin.com/in/vitali-yaroshik-3ba7041b3/)
 
 
 ## Summary
-QA Engineer with almost 3 years of practical experience in manual testing of mobile, web applications and hyperconverged infrastructure software. Well-organized and versatile team player. Key strengths include analytical and problem-solving skills, attention to details. Not afraid to take on new tasks and easily adapting to changing conditions of the project.
+
+QA Engineer with almost 3 years of practical experience in manual testing of mobile, web applications and hyperconverged infrastructure software. 
+
+Well-organized and versatile team player. Key strengths include analytical and problem-solving skills, attention to details. Not afraid to take on new tasks and easily adapting to changing conditions of the project.
 Familiar with the next programming languages: C#, Java, JavaScript.
 
 
 ## Skills
+
 * **Platforms:** Microsoft Windows XP - 10, Linux (Ubuntu, CentOS), Android 2.x - 10.x, iOS 9.x - 13.x
 
 * **Bug and Test Tracking Tools:** Atlassian Jira, TestRail
@@ -30,7 +35,8 @@ Familiar with the next programming languages: C#, Java, JavaScript.
 
 
 ## Code Example
-```
+
+```java
 public class SearchLastFile {
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
     private static final int timeDifference = 10000;
@@ -73,24 +79,22 @@ public class SearchLastFile {
 
 
 ## Experience
+
 **Oct 2017 - Present**
-	
-	**Quality Assurance Engineer**
-	
-	*a1qa Software Testing Company, Minsk*
-	
-	Functional testing of different varieties of mobile, web applications, and hyperconverged infrastructure software. Running lectures and workshops - mentoring, providing feedback 
+Quality Assurance Engineer
+a1qa Software Testing Company, Minsk
+Functional testing of different varieties of mobile, web applications, and hyperconverged infrastructure software. Running lectures and workshops - mentoring, providing feedback 
 
 
 ## Education
-2012 - 2017
-	
-	**Bachelor of Engineering: Nanotechnologies and Nanomaterials in Electronics**
 
-	*Belarusian State University of Informatics and Radioelectronics - Minsk*
+2012 - 2017
+Bachelor of Engineering: Nanotechnologies and Nanomaterials in Electronics
+Belarusian State University of Informatics and Radioelectronics - Minsk
 	
 
 ## Languages
+
 * Belarussian
 * Russian 
 * English (B1 - Intermediate)
