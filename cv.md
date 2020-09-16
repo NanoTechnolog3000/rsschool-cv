@@ -17,21 +17,14 @@ Familiar with the next programming languages: C#, Java, JavaScript.
 
 ## Skills
 
-* **Platforms:** Microsoft Windows XP - 10, Linux (Ubuntu, CentOS), Android 2.x - 10.x, iOS 9.x - 13.x
-
-* **Bug and Test Tracking Tools:** Atlassian Jira, TestRail
-
-* **Databases:** MS SQL Server, MySQL Workbench, DataGrip
-
-* **Programming Languages:** C#, Java, JavaScript
-
-* **IDE:** Visual Studio, IntelliJ IDEA
-
-* **Network Technologies:** TCP/IP, RDP, VPN, SSH, FTP
-
-* **Other Technologies:** Virtualization, SOAP, REST, GraphQL, JSON, XML, SQL, etc.
-
-* **Tools:** GIT, Postman, SoapUI, Fiddler, Charles, ADB, iTools, Unity, Oracle VM VirtualBox, Docker
+* **Platforms:** Microsoft Windows XP - 10, Linux (Ubuntu, CentOS), Android 2.x - 10.x, iOS 9.x - 13.x  
+* **Bug and Test Tracking Tools:** Atlassian Jira, TestRail  
+* **Databases:** MS SQL Server, MySQL Workbench, DataGrip  
+* **Programming Languages:** C#, Java, JavaScript  
+* **IDE:** Visual Studio, IntelliJ IDEA  
+* **Network Technologies:** TCP/IP, RDP, VPN, SSH, FTP  
+* **Other Technologies:** Virtualization, SOAP, REST, GraphQL, JSON, XML, SQL, etc.  
+* **Tools:** GIT, Postman, SoapUI, Fiddler, Charles, ADB, iTools, Unity, Oracle VM VirtualBox, Docker  
 
 
 ## Code Example
@@ -44,7 +37,7 @@ public class SearchLastFile {
     public static void printLastCreatedFiles(File[] files) {
         File lastFile = files[files.length - 1];
 
-        System.out.printf("Список последних по дате создания файлов (+- %d секунд)%n", timeDifference / 1000);
+        System.out.printf("List of last created files (+- %d seconds)%n", timeDifference / 1000);
         for (File file : files) {
             if (getFileCreationDate(lastFile) - getFileCreationDate(file) < timeDifference) {
                 printFileInfo(file);
