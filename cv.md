@@ -3,7 +3,7 @@
 ## Contact Info
 
 * [Github](https://github.com/NanoTechnolog3000)
-* [Gmail](yaroshik.vitali@gmail.com)
+* [Gmail](mailto:yaroshik.vitali@gmail.com)
 * [LinkedIn](https://www.linkedin.com/in/vitali-yaroshik-3ba7041b3/)
 
 
