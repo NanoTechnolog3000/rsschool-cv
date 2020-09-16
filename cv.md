@@ -80,17 +80,17 @@ public class SearchLastFile {
 
 ## Experience
 
-**Oct 2017 - Present**
-Quality Assurance Engineer
-a1qa Software Testing Company, Minsk
+**Oct 2017 - Present**  
+**Quality Assurance Engineer**  
+*a1qa Software Testing Company, Minsk*  
 Functional testing of different varieties of mobile, web applications, and hyperconverged infrastructure software. Running lectures and workshops - mentoring, providing feedback 
 
 
 ## Education
 
-2012 - 2017
-Bachelor of Engineering: Nanotechnologies and Nanomaterials in Electronics
-Belarusian State University of Informatics and Radioelectronics - Minsk
+**2012 - 2017**  
+**Bachelor of Engineering: Nanotechnologies and Nanomaterials in Electronics**  
+*Belarusian State University of Informatics and Radioelectronics - Minsk*  
 	
 
 ## Languages
