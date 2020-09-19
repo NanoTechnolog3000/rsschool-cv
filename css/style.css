@@ -1,0 +1,126 @@
+/*century-gothic-regular*/
+@font-face {
+	font-family: "Century Gothic";
+	src: url("CenturyGothic.eot");
+	src: local("Century Gothic"), local("CenturyGothic"),
+		url("CenturyGothic.woff2") format("woff2"),
+		url("CenturyGothic.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*century-gothic-bold*/
+@font-face {
+	font-family: "Century Gothic";
+	src: url("CenturyGothic-Bold.eot");
+	src: local("Century Gothic Bold"), local("CenturyGothic-Bold"),
+		url("CenturyGothic-Bold.woff2") format("woff2"),
+		url("CenturyGothic-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+/*century-gothic-italic*/
+@font-face {
+	font-family: "Century Gothic";
+	src: url("CenturyGothic-Italic.eot");
+	src: local("Century Gothic Italic"), local("CenturyGothic-Italic"),
+		url("CenturyGothic-Italic.woff2") format("woff2"),
+		url("CenturyGothic-Italic.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.h1-header {
+    position: absolute;
+    left: 67px;
+	top: 27px;
+	font-weight: 700;
+	font-size: 84px;
+	line-height: 103px;
+	height: 103px;
+
+}
+
+.h2-header {
+    position: absolute;
+    left: 67px;
+	top: 130px;
+	height: 40px;
+	font-weight: normal;
+	font-size: 34px;
+	line-height: 40px;
+	letter-spacing: -0.02em;
+}
+
+a {
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.header-wrapper{
+    position: relative;
+    max-width: 1400px;
+}
+
+.cv-header {
+	background-color: #576d7a;
+	height: 252px;
+}
+
+.header-font {
+	font-family: Century Gothic;
+	color: #ffffff;
+}
+
+.a-white {
+	font-weight: 500;
+}
+
+.p-header {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 27px;
+	letter-spacing: 0.01em;
+	color: #ffffff;
+}
+
+.github {
+	position: absolute;
+	height: 27px;
+	left: 67px;
+	top: 171px;
+}
+
+.email {
+	position: absolute;
+	left: 67px;
+	top: 199px;
+    height: 22px;
+}
+
+.photo {
+	position: absolute;
+	left: 1092px;
+	top: 21px;
+    width: 209px;
+
+	background: url(photo.jpg) #ffffff;
+	border: 1px solid #778892;
+	border-radius: 105px;
+}
