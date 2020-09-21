@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>Vitali Yaroshik - Curriculum vitae</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-wrapper">
+                <div class="cv-header">
+                    <h1 class="header-font h1-header">Vitali Yaroshik</h1>
+                    <h2 class="header-font h2-header">QA Engineer</h2>
+                    <p class="header-font p-header github">
+                        GitHub: <a class="a-white header-font" href="https://github.com/NanoTechnolog3000"
+                            title="Click me!">NanoTecholog3000</a>
+                    </p>
+                    <p class="header-font p-header email">
+                        E-mail: <a class="a-email header-font" href="mailto:yaroshik.vitali@gmail.com"
+                            title="Click me!">yaroshik.vitali@gmail.com</a>
+                    </p>
+                    <img class="photo" src="photo/photo.png" alt="photo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <h2 id="summary">Summary<a class="anchorjs-link " href="#summary" aria-label="Anchor" data-anchorjs-icon=""
+                style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+        <p>QA Engineer with almost 3 years of practical experience in manual testing of mobile, web applications and
+            hyperconverged infrastructure software.</p>
+
+        <p>Well-organized and versatile team player. Key strengths include analytical and problem-solving skills,
+            attention
+            to details. Not afraid to take on new tasks and easily adapting to changing conditions of the project.
+            Familiar with the next programming languages: C#, Java, JavaScript.</p>
+
+        <h2 id="skills">Skills<a class="anchorjs-link " href="#skills" aria-label="Anchor" data-anchorjs-icon=""
+                style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+        <ul>
+            <li><strong>Platforms:</strong> Microsoft Windows XP - 10, Linux (Ubuntu, CentOS), Android 2.x - 10.x, iOS
+                9.x -
+                13.x</li>
+            <li><strong>Bug and Test Tracking Tools:</strong> Atlassian Jira, TestRail</li>
+            <li><strong>Databases:</strong> MS SQL Server, MySQL Workbench, DataGrip</li>
+            <li><strong>Programming Languages:</strong> C#, Java, JavaScript</li>
+            <li><strong>IDE:</strong> Visual Studio, IntelliJ IDEA</li>
+            <li><strong>Network Technologies:</strong> TCP/IP, RDP, VPN, SSH, FTP</li>
+            <li><strong>Other Technologies:</strong> Virtualization, SOAP, REST, GraphQL, JSON, XML, SQL, etc.</li>
+            <li><strong>Tools:</strong> GIT, Postman, SoapUI, Fiddler, Charles, ADB, iTools, Unity, Oracle VM
+                VirtualBox,
+                Docker</li>
+        </ul>
+
+        <h2 id="code-example">Code Example<a class="anchorjs-link " href="#code-example" aria-label="Anchor"
+                data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+        <div class="language-java highlighter-rouge">
+            <div class="highlight">
+                <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SearchLastFile</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">SimpleDateFormat</span> <span class="n">dateFormat</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SimpleDateFormat</span><span class="o">(</span><span class="s">"yyyy-MM-dd hh:mm:ss"</span><span class="o">);</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">timeDifference</span> <span class="o">=</span> <span class="mi">10000</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printLastCreatedFiles</span><span class="o">(</span><span class="nc">File</span><span class="o">[]</span> <span class="n">files</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">File</span> <span class="n">lastFile</span> <span class="o">=</span> <span class="n">files</span><span class="o">[</span><span class="n">files</span><span class="o">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="o">];</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"List of last created files (+- %d seconds)%n"</span><span class="o">,</span> <span class="n">timeDifference</span> <span class="o">/</span> <span class="mi">1000</span><span class="o">);</span>
+        <span class="k">for</span> <span class="o">(</span><span class="nc">File</span> <span class="n">file</span> <span class="o">:</span> <span class="n">files</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">getFileCreationDate</span><span class="o">(</span><span class="n">lastFile</span><span class="o">)</span> <span class="o">-</span> <span class="n">getFileCreationDate</span><span class="o">(</span><span class="n">file</span><span class="o">)</span> <span class="o">&lt;</span> <span class="n">timeDifference</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">printFileInfo</span><span class="o">(</span><span class="n">file</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">sortByCreationDate</span><span class="o">(</span><span class="nc">File</span><span class="o">[]</span> <span class="n">files</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Arrays</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">files</span><span class="o">,</span> <span class="o">(</span><span class="n">f1</span><span class="o">,</span> <span class="n">f2</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="o">{</span>
+            <span class="kt">long</span> <span class="n">l1</span> <span class="o">=</span> <span class="n">getFileCreationDate</span><span class="o">(</span><span class="n">f1</span><span class="o">);</span>
+            <span class="kt">long</span> <span class="n">l2</span> <span class="o">=</span> <span class="n">getFileCreationDate</span><span class="o">(</span><span class="n">f2</span><span class="o">);</span>
+            <span class="k">return</span> <span class="nc">Long</span><span class="o">.</span><span class="na">compare</span><span class="o">(</span><span class="n">l1</span><span class="o">,</span> <span class="n">l2</span><span class="o">);</span>
+        <span class="o">});</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">long</span> <span class="nf">getFileCreationDate</span><span class="o">(</span><span class="nc">File</span> <span class="n">file</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="nc">BasicFileAttributes</span> <span class="n">attr</span> <span class="o">=</span> <span class="nc">Files</span><span class="o">.</span><span class="na">readAttributes</span><span class="o">(</span><span class="n">file</span><span class="o">.</span><span class="na">toPath</span><span class="o">(),</span> <span class="nc">BasicFileAttributes</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+            <span class="k">return</span> <span class="n">attr</span><span class="o">.</span><span class="na">creationTime</span><span class="o">().</span><span class="na">toInstant</span><span class="o">().</span><span class="na">toEpochMilli</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span><span class="n">file</span><span class="o">.</span><span class="na">getPath</span><span class="o">(),</span> <span class="n">e</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printFileInfo</span><span class="o">(</span><span class="nc">File</span> <span class="n">file</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">long</span> <span class="n">fileCreationDate</span> <span class="o">=</span> <span class="n">getFileCreationDate</span><span class="o">(</span><span class="n">file</span><span class="o">);</span>
+        <span class="nc">String</span> <span class="n">formattedDate</span> <span class="o">=</span> <span class="n">dateFormat</span><span class="o">.</span><span class="na">format</span><span class="o">(</span><span class="k">new</span> <span class="nc">Date</span><span class="o">(</span><span class="n">fileCreationDate</span><span class="o">));</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"%s -&gt; %s%n"</span><span class="o">,</span> <span class="n">file</span><span class="o">.</span><span class="na">getName</span><span class="o">(),</span> <span class="n">formattedDate</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
+            </div>
+        </div>
+
+        <h2 id="experience">Experience<a class="anchorjs-link " href="#experience" aria-label="Anchor"
+                data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+        <p><strong>Oct 2017 - Present</strong><br>
+            <strong>Quality Assurance Engineer</strong><br>
+            <em>a1qa Software Testing Company, Minsk</em><br>
+            Functional testing of different varieties of mobile, web applications, and hyperconverged infrastructure
+            software. Running lectures and workshops - mentoring, providing feedback</p>
+
+        <h2 id="education">Education<a class="anchorjs-link " href="#education" aria-label="Anchor"
+                data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+        <p><strong>2012 - 2017</strong><br>
+            <strong>Bachelor of Engineering: Nanotechnologies and Nanomaterials in Electronics</strong><br>
+            <em>Belarusian State University of Informatics and Radioelectronics - Minsk</em></p>
+
+        <h2 id="languages">Languages<a class="anchorjs-link " href="#languages" aria-label="Anchor"
+                data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+        <ul>
+            <li>Belarussian</li>
+            <li>Russian</li>
+            <li>English (B1 - Intermediate)</li>
+        </ul>
+
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
+        integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+
+
+
+    <div at-magnifier-wrapper="">
+        <div class="at-theme-light">
+            <div class="at-base notranslate" translate="no">
+                <div class="Z1-AJ" style="top: 0px; left: 0px;"></div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
